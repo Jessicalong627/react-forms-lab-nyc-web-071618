@@ -26,7 +26,7 @@ class LoginForm extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault()
     if (this.state.name.length > 0 && this.state.password.length > 0){
-        {this.props.onSubmit}
+        this.props.onSubmit(this.state)
     }
 
   }
